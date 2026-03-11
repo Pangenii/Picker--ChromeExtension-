@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Color Picker",
+  "version": "1.0",
+  "description": "Pick colors from any webpage",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab"]
+}
