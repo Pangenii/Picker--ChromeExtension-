@@ -5,8 +5,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="pick">Pick Color</button>
-    <p id="result">No color selected</p>
+    <div id="buttons">
+      <button id="color">Pick Color</button>
+      <button id="div">Pick Div</button>
+      <button id="font">Pick Font</button>
+    </div>
+    <hr style="display: block; width: full" />
+    <div
+      id="color-info"
+      class="hidden"
+      style="display: flex; justify-content: space-around"
+    >
+      <div id="colorList" class="colorsListing">
+        <p id="result" style="color: white">No color selected</p>
+        <button id="copybutton">copy</button>
+      </div>
+      <button id="historyButton">Show History</button>
+    </div>
 
     <script src="index.js"></script>
   </body>

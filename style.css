@@ -2,11 +2,34 @@ body {
   font-family: Arial;
   width: 200px;
   padding: 15px;
+  background-color: #0b0f12;
 }
 
 button {
-  padding: 8px;
   cursor: pointer;
-  background-color: black;
+  background-color: #4285f4;
   color: white;
+  border-radius: 10em;
+  padding: 2px 8px;
+  font-weight: 500;
+}
+#copybutton{
+  background-color: green;
+  padding: 2px 6px;
+  align-self: center;
+}
+
+#color-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.colorsListing{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hidden{
+  display: none !important;
 }
