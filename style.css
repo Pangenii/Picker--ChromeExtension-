@@ -38,6 +38,11 @@ button {
   cursor: pointer;
 }
 
+#historyButton{
+  display: flex;
+  justify-self: center;
+}
+
 .colorsListing{
   display: flex;
   justify-content: space-around;

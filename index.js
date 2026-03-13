@@ -30,10 +30,16 @@ async function displayHistory() {
         const box = document.createElement("div");
         box.className = "color-box";
         box.style.backgroundColor = color;
+        box.title = color;
 
         box.addEventListener("click", async () => {
             await navigator.clipboard.writeText(color);
-            result.innerText = color;
+            colorInfo.classList.remove("hidden");
+            result.innerText = `${color} copied!`;
+
+            setTimeout(() => {
+                result.innerText = color;
+            }, 1000);
         });
 
         historyContainer.appendChild(box);
